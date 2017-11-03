@@ -2,6 +2,8 @@
 
 namespace Kata\src;
 
+use function array_sum;
+
 /**
  * @package Kata\src
  */
@@ -18,10 +20,8 @@ class MagicThree
 			foreach ($numbers as $secondNumber) {
 				foreach ($numbers as $thirdNumber) {
 					$combination = [$firstNumber, $secondNumber, $thirdNumber];
-					if ($this->isSumEqualZero($combination)) {
+					if ($this->isSumEqualZero($combination))
 						return true;
-					}
-					unset($combination);
 				}
 			}
 		}
@@ -36,12 +36,6 @@ class MagicThree
 	 */
 	public function isSumEqualZero(array $numbers)
 	{
-		$summ = 0;
-
-		foreach ($numbers as $number) {
-			$summ += $number;
-		}
-
-		return $summ === 0;
+		return array_sum($numbers) === 0;
 	}
 }
