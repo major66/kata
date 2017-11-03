@@ -1,0 +1,21 @@
+{
+    "name": "yohann.payrot/php",
+    "authors": [
+        {
+            "name": "Yohann Payrot",
+            "email": "yohann.payrot@doclerholding.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kata\\src\\": "src/",
+            "Kata\\test\\": "test/"
+        }
+    }
+}
