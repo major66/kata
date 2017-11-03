@@ -10,7 +10,7 @@ class MagicThree
 	/**
 	 * @param array $numbers
 	 *
-	 * @return array|bool
+	 * @return bool
 	 */
 	public function magicThree(array $numbers)
 	{
