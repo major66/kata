@@ -2,8 +2,6 @@
 
 namespace Kata\src;
 
-use function array_sum;
-
 /**
  * @package Kata\src
  */
